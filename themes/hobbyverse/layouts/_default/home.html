@@ -1,0 +1,215 @@
+{{ define "main" }}
+{{ $posts := where site.RegularPages "Section" "blog" }}
+{{ $gunpla := site.GetPage "/categories/gunpla" }}
+{{ $lego := site.GetPage "/categories/lego" }}
+{{ $tcg := site.GetPage "/categories/tcg" }}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="wrap hero-grid">
+        <div class="hero-copy">
+            <p class="chip">Gunpla <i></i> LEGO <i></i> TCG <i></i> et la suite</p>
+            <h1>Tous tes hobbies,<br>un seul <mark>univers</mark>.</h1>
+            <p class="hero-lead">Guides pour bien débuter et comparatifs honnêtes pour les passionnés de maquettes Gundam, de briques et de cartes à collectionner.</p>
+            <div class="hero-actions">
+                <a href="{{ "blog/" | relURL }}" class="btn btn-ink">Lire les guides</a>
+                <a href="#univers" class="btn btn-ghost">Explorer les univers</a>
+            </div>
+            <ul class="hero-proof" aria-label="Nos engagements">
+                <li>Guides pensés pour les débutants</li>
+                <li>Un univers par hobby</li>
+            </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+            <!-- Planche de pièces (Gunpla) -->
+            <div class="art art-runner">
+                <svg viewBox="0 0 320 230">
+                    <rect x="8" y="8" width="304" height="214" rx="10" fill="none" stroke="#FF5A36" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+                    <path d="M30 40h260M30 190h260M70 40v150M160 40v150M250 40v150" stroke="#3A3D52" stroke-width="5" stroke-linecap="round"/>
+                    <polygon points="86,64 134,64 122,100 98,100" fill="#FAFAF7"/>
+                    <rect x="98" y="108" width="36" height="46" rx="5" fill="#3F6BFF"/>
+                    <polygon points="178,60 228,76 178,100" fill="#FFC400"/>
+                    <polygon points="178,110 232,110 214,152 190,152" fill="#FF5A36"/>
+                    <circle cx="44" cy="84" r="16" fill="#FAFAF7"/>
+                    <circle cx="44" cy="84" r="6" fill="#14151F"/>
+                    <rect x="30" y="116" width="26" height="52" rx="6" fill="#3F6BFF"/>
+                    <polygon points="262,62 284,62 284,108 262,108" fill="#FAFAF7"/>
+                    <polygon points="262,122 284,122 284,172 270,172" fill="#FFC400"/>
+                </svg>
+                <span class="art-tag">Runner</span>
+            </div>
+
+            <!-- Cartes (TCG) -->
+            <div class="art art-cards">
+                <svg class="card c1" viewBox="0 0 120 168"><rect x="3" y="3" width="114" height="162" rx="12" fill="#A793FF" stroke="#14151F" stroke-width="4"/><rect x="14" y="14" width="92" height="78" rx="6" fill="#FAFAF7" stroke="#14151F" stroke-width="3"/><circle cx="60" cy="53" r="20" fill="#7A5CFF"/><path d="M20 112h80M20 126h56M20 140h68" stroke="#14151F" stroke-width="4" stroke-linecap="round"/></svg>
+                <svg class="card c2" viewBox="0 0 120 168"><rect x="3" y="3" width="114" height="162" rx="12" fill="#14151F" stroke="#14151F" stroke-width="4"/><rect x="14" y="14" width="92" height="78" rx="6" fill="#FFC400"/><polygon points="60,26 78,53 60,80 42,53" fill="#14151F"/><path d="M20 112h80M20 126h56M20 140h68" stroke="#FAFAF7" stroke-width="4" stroke-linecap="round"/></svg>
+                <svg class="card c3" viewBox="0 0 120 168"><rect x="3" y="3" width="114" height="162" rx="12" fill="#FF5A36" stroke="#14151F" stroke-width="4"/><rect x="14" y="14" width="92" height="78" rx="6" fill="#FAFAF7" stroke="#14151F" stroke-width="3"/><path d="M24 80 52 36l16 22 12-14 20 36z" fill="#14151F"/><path d="M20 112h80M20 126h56M20 140h68" stroke="#14151F" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+
+            <!-- Brique (LEGO) -->
+            <div class="art art-brick">
+                <svg viewBox="0 0 240 130">
+                    <g fill="#FFC400" stroke="#14151F" stroke-width="4" stroke-linejoin="round">
+                        <rect x="26" y="8" width="34" height="22" rx="6"/><rect x="74" y="8" width="34" height="22" rx="6"/>
+                        <rect x="122" y="8" width="34" height="22" rx="6"/><rect x="170" y="8" width="34" height="22" rx="6"/>
+                        <rect x="8" y="26" width="224" height="96" rx="12"/>
+                    </g>
+                    <path d="M22 40h196" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <span class="spark s1"></span><span class="spark s2"></span>
+        </div>
+    </div>
+</section>
+
+<!-- BANDEAU -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        {{ range seq 2 }}
+        <span>Gunpla</span><i>✦</i><span>LEGO</span><i>✦</i><span>Pokémon</span><i>✦</i><span>Magic</span><i>✦</i><span>Lorcana</span><i>✦</i><span>Guides</span><i>✦</i><span>Comparatifs</span><i>✦</i><span>Débuter</span><i>✦</i>
+        {{ end }}
+    </div>
+</div>
+
+<!-- UNIVERS -->
+<section class="section" id="univers">
+    <div class="wrap">
+        <header class="section-head">
+            <p class="eyebrow">Les univers</p>
+            <h2>Choisis ton terrain de jeu</h2>
+            <p>Chaque hobby a son rayon : des guides pour démarrer, des comparatifs et les accessoires qui valent le coup.</p>
+        </header>
+
+        <div class="bento">
+            {{ with $gunpla }}
+            <a href="{{ .RelPermalink }}" class="tile tile-gunpla">
+                <span class="tile-index">Univers 01</span>
+                <h3>Gunpla</h3>
+                <p>{{ .Params.tagline }}</p>
+                <ul class="tile-chips">{{ range .Params.chips }}<li>{{ . }}</li>{{ end }}</ul>
+                <span class="tile-foot">{{ len .Pages }} guide{{ if gt (len .Pages) 1 }}s{{ end }} <b>→</b></span>
+                <svg class="tile-art" viewBox="0 0 200 200" aria-hidden="true">
+                    <g stroke="#14151F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+                        <path d="M100 66 50 14l16-4 38 46z" fill="#FFC400"/>
+                        <path d="M100 66 150 14l-16-4-38 46z" fill="#FFC400"/>
+                        <path d="M48 112q0-48 52-52t52 52v44H48z" fill="#FAFAF7"/>
+                        <path d="M48 112h104" fill="none"/>
+                        <rect x="62" y="96" width="76" height="26" rx="6" fill="#14151F"/>
+                        <rect x="72" y="104" width="18" height="9" rx="3" fill="#FFC400" stroke="none"/>
+                        <rect x="110" y="104" width="18" height="9" rx="3" fill="#FFC400" stroke="none"/>
+                        <rect x="82" y="130" width="36" height="22" rx="4" fill="#FAFAF7"/>
+                        <path d="M91 134v14M100 134v14M109 134v14" fill="none" stroke-width="3"/>
+                        <path d="M48 156h28l8 22h32l8-22h28v14q0 14-14 14H62q-14 0-14-14z" fill="#3F6BFF"/>
+                    </g>
+                </svg>
+            </a>
+            {{ end }}
+
+            {{ with $lego }}
+            <a href="{{ .RelPermalink }}" class="tile tile-lego">
+                <span class="tile-index">Univers 02</span>
+                <h3>LEGO</h3>
+                <p>{{ .Params.tagline }}</p>
+                <ul class="tile-chips">{{ range .Params.chips }}<li>{{ . }}</li>{{ end }}</ul>
+                <span class="tile-foot">{{ len .Pages }} guide{{ if gt (len .Pages) 1 }}s{{ end }} <b>→</b></span>
+            </a>
+            {{ end }}
+
+            {{ with $tcg }}
+            <a href="{{ .RelPermalink }}" class="tile tile-tcg">
+                <span class="tile-index">Univers 03</span>
+                <h3>TCG</h3>
+                <p>{{ .Params.tagline }}</p>
+                <ul class="tile-chips">{{ range .Params.chips }}<li>{{ . }}</li>{{ end }}</ul>
+                <span class="tile-foot">{{ len .Pages }} guide{{ if gt (len .Pages) 1 }}s{{ end }} <b>→</b></span>
+            </a>
+            {{ end }}
+
+            <div class="tile tile-next">
+                <span class="tile-index">Univers 04</span>
+                <h3>Ta prochaine passion</h3>
+                <p>D'autres hobbies rejoindront Hobbyverse au fil du temps.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- A LA UNE -->
+{{ if $posts }}
+<section class="section section-alt">
+    <div class="wrap">
+        <header class="section-head section-head-row">
+            <div>
+                <p class="eyebrow">À lire</p>
+                <h2>Les derniers guides</h2>
+            </div>
+            <a href="{{ "blog/" | relURL }}" class="link-arrow">Tous les articles <b>→</b></a>
+        </header>
+
+        <div class="feed">
+            {{ with index $posts 0 }}
+            <article class="feature">
+                <a href="{{ .RelPermalink }}" class="feature-cover" aria-label="{{ .Title }}">{{ partial "cover.html" . }}</a>
+                <div class="feature-body">
+                    <p class="meta">{{ with .Params.categories }}<span class="badge badge-{{ urlize (index . 0) }}">{{ index . 0 }}</span>{{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_medium" .Date }}</time></p>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description }}</p>
+                    <a href="{{ .RelPermalink }}" class="link-arrow">Lire le guide <b>→</b></a>
+                </div>
+            </article>
+            {{ end }}
+
+            <div class="feed-list">
+                {{ range first 4 (after 1 $posts) }}
+                <article class="row">
+                    <a href="{{ .RelPermalink }}" class="row-cover" aria-label="{{ .Title }}">{{ partial "cover.html" . }}</a>
+                    <div>
+                        <p class="meta">{{ with .Params.categories }}<span class="badge badge-{{ urlize (index . 0) }}">{{ index . 0 }}</span>{{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_medium" .Date }}</time></p>
+                        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- PAR OU COMMENCER -->
+<section class="section">
+    <div class="wrap">
+        <header class="section-head">
+            <p class="eyebrow">Pour débuter</p>
+            <h2>Par où commencer, hobby par hobby</h2>
+        </header>
+        <div class="starts">
+            <article class="start start-gunpla">
+                <h3>Ton premier Gunpla</h3>
+                <ol>
+                    <li>Pars sur un <strong>High Grade (HG)</strong> au 1/144 : emboîtement, sans colle.</li>
+                    <li>Prends une <strong>pince coupante</strong> plutôt que les doigts pour détacher les pièces.</li>
+                    <li>Retire les <strong>traces des attaches</strong> avant d'assembler.</li>
+                </ol>
+            </article>
+            <article class="start start-lego">
+                <h3>Ton premier set LEGO</h3>
+                <ol>
+                    <li>Choisis un <strong>thème</strong> qui te parle plutôt qu'une taille impressionnante.</li>
+                    <li>Respecte les <strong>sachets numérotés</strong> : ils suivent les étapes de la notice.</li>
+                    <li>Utilise l'app <strong>LEGO Builder</strong> pour zoomer sur les étapes.</li>
+                </ol>
+            </article>
+            <article class="start start-tcg">
+                <h3>Ta première collection de cartes</h3>
+                <ol>
+                    <li>Choisis <strong>un seul jeu</strong> : Pokémon, Magic, Lorcana...</li>
+                    <li>Démarre avec un <strong>deck préconstruit</strong> pour apprendre les règles.</li>
+                    <li>Protège tes cartes avec des <strong>sleeves</strong> dès le départ.</li>
+                </ol>
+            </article>
+        </div>
+    </div>
+</section>
+{{ end }}

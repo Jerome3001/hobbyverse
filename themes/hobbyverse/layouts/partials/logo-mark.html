@@ -1,0 +1,7 @@
+{{- /* Logo Hobbyverse (casque à V-fin). Usage : {{ partial "logo-mark.html" . }} ou {{ partial "logo-mark.html" (dict "inverse" true) }} pour fond sombre. */ -}}
+{{- $inv := and (reflect.IsMap .) .inverse -}}
+{{- if $inv -}}
+<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="16" fill="#FAFAF7"/><g stroke="#14151F" stroke-width="2.2" stroke-linejoin="round"><path d="M32 36 12 9l9-2 15 24z" fill="#FFC400"/><path d="M32 36 52 9l-9-2-15 24z" fill="#FFC400"/></g><path d="M15 46Q15 33 32 31T49 46V55H15z" fill="#14151F"/><rect x="19" y="41" width="26" height="8" rx="3" fill="#FAFAF7"/><circle cx="26.5" cy="45" r="2.2" fill="#14151F"/><circle cx="37.5" cy="45" r="2.2" fill="#14151F"/></svg>
+{{- else -}}
+<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="16" fill="#14151F"/><path d="M32 36 12 9l9-2 15 24z" fill="#FFC400"/><path d="M32 36 52 9l-9-2-15 24z" fill="#FFC400"/><path d="M15 46Q15 33 32 31T49 46V55H15z" fill="#FAFAF7"/><rect x="19" y="41" width="26" height="8" rx="3" fill="#14151F"/><circle cx="26.5" cy="45" r="2.2" fill="#FFC400"/><circle cx="37.5" cy="45" r="2.2" fill="#FFC400"/></svg>
+{{- end -}}

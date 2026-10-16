@@ -1,0 +1,74 @@
+baseURL = "https://hobbyverse.fr/"
+title = "Hobbyverse"
+theme = "hobbyverse"
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 12
+
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["html", "rss", "llms"]
+
+[languages]
+  [languages.fr]
+    locale = "fr-FR"
+    label = "Français"
+    weight = 1
+    title = "Hobbyverse"
+    contentDir = "content/fr"
+    [languages.fr.params]
+      description = "Guides, tests et comparatifs pour les passionnés de Gunpla, de LEGO et de jeux de cartes à collectionner."
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[languages.fr.menus.main]]
+  name = "Gunpla"
+  url = "/categories/gunpla/"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "LEGO"
+  url = "/categories/lego/"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "TCG"
+  url = "/categories/tcg/"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Le blog"
+  url = "/blog/"
+  weight = 4
+
+[params]
+  author = "La rédaction Hobbyverse"
+  founding_year = "2026"
+  logo = "/favicon.svg"
+  default_og_image = "/images/og-default.png"
+  expertise = ["Gunpla", "LEGO", "Jeux de cartes à collectionner"]
+
+[related]
+  includeNewer = true
+  threshold = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = true

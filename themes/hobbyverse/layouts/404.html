@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="error-page">
+    <div class="wrap">
+        <p class="error-code" aria-hidden="true">404</p>
+        <h1>Cette page s'est égarée dans l'univers</h1>
+        <p>La page demandée n'existe pas ou a changé d'adresse.</p>
+        <div class="hero-actions">
+            <a href="{{ "/" | relURL }}" class="btn btn-ink">Retour à l'accueil</a>
+            <a href="{{ "blog/" | relURL }}" class="btn btn-ghost">Voir les guides</a>
+        </div>
+    </div>
+</section>
+{{ end }}

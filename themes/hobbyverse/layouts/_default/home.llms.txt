@@ -1,0 +1,23 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+## À propos
+
+{{ site.Title }} est un blog francophone consacré aux hobbies de collection et de construction : Gunpla (maquettes Gundam), LEGO et jeux de cartes à collectionner (Pokémon, Magic, Lorcana). D'autres univers pourront s'ajouter.
+
+## Univers
+{{ range site.Taxonomies.categories.Alphabetical }}
+- [{{ .Page.Title }}]({{ .Page.Permalink }}) : {{ .Page.Description }}
+{{- end }}
+
+## Articles
+{{ range where site.RegularPages "Section" "blog" }}
+- [{{ .Title }}]({{ .Permalink }}) : {{ .Description }}
+{{- end }}
+
+## Informations techniques
+
+- Générateur : Hugo
+- Sitemap : {{ "sitemap.xml" | absURL }}
+- Flux RSS : {{ "index.xml" | absURL }}

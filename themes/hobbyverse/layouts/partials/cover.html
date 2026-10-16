@@ -1,0 +1,10 @@
+{{- /* Visuel d'article : image si elle existe, sinon couverture générée aux couleurs de l'univers. Contexte : la page. */ -}}
+{{- $cat := "" -}}
+{{- with .Params.categories }}{{ $cat = urlize (index . 0) }}{{ end -}}
+{{- if .Params.image -}}
+<img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" loading="lazy" width="640" height="400">
+{{- else -}}
+<span class="cover cover-{{ $cat | default "default" }}" aria-hidden="true">
+    <span class="cover-glyph">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+</span>
+{{- end -}}

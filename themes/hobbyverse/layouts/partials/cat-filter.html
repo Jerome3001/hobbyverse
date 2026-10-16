@@ -1,0 +1,7 @@
+{{- /* Pastilles de navigation entre univers. Contexte : la page courante. */ -}}
+<nav class="filter" aria-label="Filtrer par univers">
+    <a href="{{ "blog/" | relURL }}" class="filter-chip{{ if eq .RelPermalink "/blog/" }} is-active{{ end }}">Tous</a>
+    {{ range site.Taxonomies.categories.Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}" class="filter-chip filter-{{ .Page.Title | urlize }}{{ if eq $.RelPermalink .Page.RelPermalink }} is-active{{ end }}">{{ .Page.Title }} <span>{{ .Count }}</span></a>
+    {{ end }}
+</nav>

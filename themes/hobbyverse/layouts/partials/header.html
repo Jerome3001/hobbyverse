@@ -1,0 +1,40 @@
+<header class="site-header">
+    <div class="header-inner">
+        <a href="{{ "/" | relURL }}" class="brand" aria-label="Hobbyverse, accueil">
+            {{ partial "logo-mark.html" . }}
+            <span class="brand-name">Hobby<span>verse</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            {{ $current := .RelPermalink }}
+            {{ range site.Menus.main }}
+            <a href="{{ .URL | relURL }}" class="nav-pill{{ if hasPrefix $current .URL }} is-active{{ end }}">{{ .Name }}</a>
+            {{ end }}
+        </nav>
+
+        <a href="{{ "blog/" | relURL }}" class="btn btn-ink header-cta">Lire les guides</a>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Navigation mobile">
+        {{ range site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+        <a href="{{ "blog/" | relURL }}" class="btn btn-ink">Lire les guides</a>
+    </nav>
+</header>
+
+<script>
+(function () {
+    var toggle = document.querySelector('.menu-toggle');
+    var nav = document.getElementById('nav-mobile');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+    });
+})();
+</script>

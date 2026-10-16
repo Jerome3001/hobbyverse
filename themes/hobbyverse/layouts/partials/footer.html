@@ -1,0 +1,41 @@
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-main">
+            <div class="footer-intro">
+                <a href="{{ "/" | relURL }}" class="brand brand-light" aria-label="Hobbyverse, accueil">
+                    {{ partial "logo-mark.html" (dict "inverse" true) }}
+                    <span class="brand-name">Hobby<span>verse</span></span>
+                </a>
+                <p class="footer-desc">{{ site.Params.description }}</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navigation du pied de page">
+                <p class="footer-label">Les univers</p>
+                <ul class="footer-chips">
+                    {{ range site.Menus.main }}
+                    <li><a href="{{ .URL | relURL }}" class="fchip fchip-{{ urlize .Name }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+
+                <p class="footer-label">Le site</p>
+                <ul class="footer-links">
+                    <li><a href="{{ "a-propos/" | relURL }}">À propos</a></li>
+                    <li><a href="{{ "plan-du-site/" | relURL }}">Plan du site</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <p class="footer-giant" aria-hidden="true">Hobbyverse</p>
+
+    <div class="wrap">
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ site.Title }}. Tous droits réservés.</p>
+            <ul>
+                <li><a href="{{ "mentions-legales/" | relURL }}">Mentions légales</a></li>
+                <li><a href="{{ "politique-de-confidentialite/" | relURL }}">Confidentialité</a></li>
+                <li><a href="{{ "cgu/" | relURL }}">CGU</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="page-head">
+    <div class="wrap page-head-inner">
+        <div>
+            {{ if eq .Kind "term" }}<p class="eyebrow">{{ if eq .Data.Plural "tags" }}Mot-clé{{ else }}Univers{{ end }}</p>{{ end }}
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.tagline }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+        </div>
+        {{ if eq .Params.art "zaku" }}{{ partial "art-zaku.html" . }}{{ end }}
+    </div>
+</section>
+
+<div class="wrap">
+    {{ if or (eq .Kind "section") (and (eq .Kind "term") (eq .Data.Plural "categories")) }}{{ partial "cat-filter.html" . }}{{ end }}
+
+    {{ $paginator := .Paginate (where .Pages "Section" "blog") }}
+    {{ if $paginator.Pages }}
+    <div class="list-grid">
+        {{ range $paginator.Pages }}
+        <article class="card">
+            <a href="{{ .RelPermalink }}" class="card-cover" aria-label="{{ .Title }}">{{ partial "cover.html" . }}</a>
+            <div class="card-body">
+                <p class="meta">{{ with .Params.categories }}<span class="badge badge-{{ urlize (index . 0) }}">{{ index . 0 }}</span>{{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_medium" .Date }}</time></p>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+    {{ else }}
+    <p class="empty">Aucun article pour le moment.</p>
+    {{ end }}
+</div>
+{{ end }}

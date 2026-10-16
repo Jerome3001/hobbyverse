@@ -1,0 +1,118 @@
+{{ define "main" }}
+{{ $cat := "" }}{{ with .Params.categories }}{{ $cat = index . 0 }}{{ end }}
+<article class="post">
+    <div class="wrap">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol>
+                <li><a href="{{ "/" | relURL }}">Accueil</a></li>
+                <li><a href="{{ "blog/" | relURL }}">Le blog</a></li>
+                {{ if $cat }}<li><a href="{{ printf "categories/%s/" ($cat | urlize) | relURL }}">{{ $cat }}</a></li>{{ end }}
+                <li><span aria-current="page">{{ .Title }}</span></li>
+            </ol>
+        </nav>
+
+        <header class="post-hero">
+            <div class="post-hero-text">
+                <p class="meta">
+                    {{ if $cat }}<a href="{{ printf "categories/%s/" ($cat | urlize) | relURL }}" class="badge badge-{{ $cat | urlize }}">{{ $cat }}</a>{{ end }}
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time>
+                    <span>{{ .ReadingTime }} min de lecture</span>
+                </p>
+                <h1>{{ .Title }}</h1>
+                {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+                <p class="byline">Par {{ site.Params.author }}{{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }} <span>Mis à jour le {{ time.Format ":date_long" .Lastmod }}</span>{{ end }}</p>
+            </div>
+            <figure class="post-cover">
+                {{ partial "cover.html" . }}
+                {{ with .Params.imageCredit }}<figcaption>{{ . }}</figcaption>{{ end }}
+            </figure>
+        </header>
+
+        <div class="post-layout{{ if .TableOfContents }} has-toc{{ end }}">
+            {{ if .TableOfContents }}
+            <aside class="post-aside">
+                <nav class="toc" aria-label="Sommaire">
+                    <p class="toc-title">Sommaire</p>
+                    {{ .TableOfContents }}
+                </nav>
+            </aside>
+            {{ end }}
+
+            <div class="post-main">
+                <div class="prose">{{ .Content }}</div>
+
+                {{ with .Params.faq }}
+                <section class="faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Questions fréquentes</h2>
+                    {{ range . }}
+                    <details>
+                        <summary>{{ .question }}</summary>
+                        <p>{{ .answer }}</p>
+                    </details>
+                    {{ end }}
+                </section>
+                {{ end }}
+
+                {{ with .Params.tags }}
+                <ul class="post-tags" aria-label="Mots-clés">
+                    {{ range . }}<li><a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="filter-chip">#{{ . }}</a></li>{{ end }}
+                </ul>
+                {{ end }}
+
+                <aside class="author-box" aria-label="À propos de l'auteur">
+                    {{ partial "logo-mark.html" . }}
+                    <div>
+                        <p class="author-name">{{ site.Params.author }}</p>
+                        <p>Hobbyverse publie des guides et des comparatifs sur le Gunpla, les LEGO et les jeux de cartes à collectionner. <a href="{{ "a-propos/" | relURL }}">En savoir plus</a></p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        {{ $related := where (site.RegularPages.Related .) "Section" "blog" }}
+        {{ if lt (len $related) 3 }}
+            {{ $recent := where (where site.RegularPages "Section" "blog") "Permalink" "ne" .Permalink }}
+            {{ $related = $related | union $recent }}
+        {{ end }}
+        {{ $related = first 3 $related }}
+        {{ if $related }}
+        <aside class="related" aria-labelledby="related-title">
+            <h2 id="related-title">Dans le même esprit</h2>
+            <div class="list-grid list-grid-flush">
+                {{ range $related }}
+                <article class="card">
+                    <a href="{{ .RelPermalink }}" class="card-cover" aria-label="{{ .Title }}">{{ partial "cover.html" . }}</a>
+                    <div class="card-body">
+                        <p class="meta">{{ with .Params.categories }}<span class="badge badge-{{ urlize (index . 0) }}">{{ index . 0 }}</span>{{ end }}</p>
+                        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                        <p>{{ .Description }}</p>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </aside>
+        {{ end }}
+
+        <nav class="post-nav" aria-label="Navigation entre articles">
+            {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="post-nav-prev"><span>Article précédent</span>{{ .Title }}</a>{{ end }}
+            {{ with .NextInSection }}<a href="{{ .RelPermalink }}" class="post-nav-next"><span>Article suivant</span>{{ .Title }}</a>{{ end }}
+        </nav>
+    </div>
+</article>
+
+<script>
+(function () {
+    var links = document.querySelectorAll('.toc a');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            links.forEach(function (a) { a.classList.remove('is-active'); });
+            var l = document.querySelector('.toc a[href="#' + e.target.id + '"]');
+            if (l) l.classList.add('is-active');
+        });
+    }, { rootMargin: '-90px 0px -60% 0px' });
+    document.querySelectorAll('.prose h2, .prose h3').forEach(function (h) { if (h.id) obs.observe(h); });
+})();
+</script>
+{{ end }}

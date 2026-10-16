@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="page-head">
+    <div class="wrap">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </div>
+</section>
+<div class="wrap terms">
+    {{ if eq .Data.Plural "categories" }}
+    <div class="terms-grid">
+        {{ range .Data.Terms.Alphabetical }}
+        <a href="{{ .Page.RelPermalink }}" class="term-card term-{{ .Page.Title | urlize }}">
+            <h2>{{ .Page.Title }}</h2>
+            <p>{{ .Page.Params.tagline }}</p>
+            <span class="tile-foot">{{ .Count }} guide{{ if gt .Count 1 }}s{{ end }} <b>→</b></span>
+        </a>
+        {{ end }}
+    </div>
+    {{ else }}
+    <ul class="tag-cloud">
+        {{ range .Data.Terms.Alphabetical }}
+        <li><a href="{{ .Page.RelPermalink }}" class="filter-chip">#{{ .Page.Title }} <span>{{ .Count }}</span></a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>
+{{ end }}
