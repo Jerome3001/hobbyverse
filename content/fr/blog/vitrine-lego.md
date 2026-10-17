@@ -6,6 +6,9 @@ lastmod: 2026-10-16
 categories: ["LEGO"]
 tags: ["lego", "vitrine", "étagère", "exposition", "poussière"]
 draft: false
+image: "/images/blog/vitrine-lego.webp"
+imageAlt: "Trois vitrines vitrées éclairées par des LED contenant des modèles en briques de construction, dans un salon"
+imageCredit: "Illustration générée par IA"
 faq:
   - question: "Quelle marge laisser autour d'un set LEGO dans une vitrine ?"
     answer: "Ajoute au minimum 1 cm par axe et vise 3 à 5 cm si le meuble le permet, plus de la place au-dessus si la vitrine s'ouvre par un couvercle à soulever. LEGO donne ses dimensions en « plus de », donc un set monté peut dépasser le chiffre annoncé."

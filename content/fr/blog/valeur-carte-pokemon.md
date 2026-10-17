@@ -6,6 +6,9 @@ lastmod: 2026-10-16
 categories: ["TCG"]
 tags: ["pokémon", "valeur des cartes", "estimation", "cardmarket"]
 draft: false
+image: "/images/blog/valeur-carte-pokemon.webp"
+imageAlt: "Main tenant plusieurs cartes Pokémon rares dans des étuis rigides"
+imageCredit: "Photo : Erik Mclean, via Pexels (Pexels License)"
 faq:
   - question: "Comment savoir la valeur de ma carte Pokémon ?"
     answer: "Identifie d'abord la carte (nom, extension, numéro, langue, version), évalue son état, puis compare plusieurs sources : le prix le plus bas sur Cardmarket, les ventes terminées sur eBay et un site d'estimation. Aucune source seule ne donne la valeur exacte, car le prix dépend aussi de la demande du moment."
@@ -76,6 +79,18 @@ Trois familles d'outils existent.
 | Applications de suivi | Suivent la valeur d'une collection dans le temps ; les versions gratuites sont souvent limitées en nombre de cartes ou en historique |
 
 Les conditions des formules gratuites et payantes changent souvent : vérifie-les avant de t'abonner à quoi que ce soit.
+
+### Quelques applications, et leurs limites
+
+Voici ce que disent les fiches officielles de trois applications, relevées le 16 octobre 2026. Ce n'est ni un classement ni un test : nous n'avons pas mesuré leur précision de scan.
+
+| Application | Ce que dit sa fiche | Limites annoncées |
+|---|---|---|
+| [PokéCardex](https://apps.apple.com/fr/app/pok%C3%A9cardex/id6451395407) | Scanner qui identifie les cartes (scan en français), gestion de collection, historique de prix par carte, prix issus de plusieurs plateformes dont Cardmarket et TCGPlayer, au choix | Gratuite avec achats intégrés : scanner, classeurs et historique illimités réservés à l'abonnement Plus (4,99 € par mois ou 49,99 € par an selon la fiche). iPhone et iPad. Application non officielle |
+| iEstims | Estimation de la valeur d'une carte à partir d'un scan | iPhone uniquement, gratuite avec achats intégrés |
+| TCGScan | Scanner affichant des prix de marché de TCGPlayer et de Cardmarket | iOS, développeur non affilié à ces plateformes |
+
+Trois points communs ressortent. Ces applications affichent un prix de marché, pas un prix de revente garanti. Elles ne voient pas l'état réel de ta carte, qui peut faire baisser la valeur. Enfin, les produits scellés, les cartes altérées ou signées sont mal évalués par ce type d'outil. Utilise un scan pour identifier rapidement une carte, puis recoupe le prix avec Cardmarket et les ventes terminées.
 
 ## Comment croiser les sources
 

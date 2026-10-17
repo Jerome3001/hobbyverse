@@ -69,11 +69,16 @@
             </div>
         </div>
 
-        {{ $related := where (site.RegularPages.Related .) "Section" "blog" }}
-        {{ if lt (len $related) 3 }}
-            {{ $recent := where (where site.RegularPages "Section" "blog") "Permalink" "ne" .Permalink }}
-            {{ $related = $related | union $recent }}
-        {{ end }}
+        {{- /* Articles liés : d'abord ceux de la même catégorie (les plus proches par mots-clés en tête), puis ceux des autres catégories. */ -}}
+        {{ $all := where (where site.RegularPages "Section" "blog") "Permalink" "ne" .Permalink }}
+        {{ $rel := where (site.RegularPages.Related .) "Section" "blog" }}
+        {{ $same := where $all "Params.categories" "intersect" .Params.categories }}
+        {{ $others := complement $same $all }}
+        {{ $sameRel := where $rel "Params.categories" "intersect" .Params.categories }}
+        {{ $sameRest := complement $sameRel $same }}
+        {{ $othersRel := complement $same $rel }}
+        {{ $othersRest := complement $othersRel $others }}
+        {{ $related := $sameRel | append $sameRest | append $othersRel | append $othersRest }}
         {{ $related = first 3 $related }}
         {{ if $related }}
         <aside class="related" aria-labelledby="related-title">

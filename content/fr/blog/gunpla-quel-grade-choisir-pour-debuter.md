@@ -1,11 +1,14 @@
 ---
 title: "Gunpla débutant : quel grade choisir ?"
 description: "Gunpla débutant : EG, HG, RG ou MG ? Compare les grades, les échelles et le temps de montage pour choisir ton premier kit."
-date: 2026-10-14
+date: 2026-10-16
 lastmod: 2026-10-16
 categories: ["Gunpla"]
 tags: ["gunpla", "grades", "débuter", "maquette gundam"]
 draft: false
+image: "/images/blog/gunpla-quel-grade-choisir-pour-debuter.webp"
+imageAlt: "Figurines Gunpla de différentes tailles alignées sur une étagère en bois"
+imageCredit: "Photo : Daily Choice, via Unsplash (Unsplash License)"
 faq:
   - question: "Quel Gunpla choisir pour débuter ?"
     answer: "L'Entry Grade (EG) est conçu pour les tout-débutants : il se monte par emboîtement, sans colle ni outils. Le High Grade (HG) au 1/144 est le choix classique pour un premier vrai montage, avec une large gamme de modèles. Choisis un modèle que tu aimes plutôt que le plus impressionnant."

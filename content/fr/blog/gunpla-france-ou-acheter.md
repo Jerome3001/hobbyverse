@@ -6,11 +6,14 @@ lastmod: 2026-10-16
 categories: ["Gunpla"]
 tags: ["gunpla", "boutiques", "précommande", "achat"]
 draft: false
+image: "/images/blog/gunpla-france-ou-acheter.webp"
+imageAlt: "Maquette Gunpla Entry Grade RX-78-2 blanche, bleue et rouge sur fond gris"
+imageCredit: "Photo : Jason Ng, via Unsplash (Unsplash License)"
 faq:
   - question: "Où acheter des Gunpla en France ?"
-    answer: "Chez des boutiques spécialisées en ligne comme Gunpla-Shop, Dynamite Gunpla ou Rise of Gunpla, dans des magasins physiques comme le Bandai Hobby Store annoncé à Paris en 2020, ou chez des revendeurs généralistes de maquettes. Compare les gammes en stock, les précommandes et le retrait en magasin."
+    answer: "Chez des boutiques spécialisées en ligne comme Gunpla-Shop, Dynamite Gunpla ou Rise of Gunpla, dans des magasins physiques comme le Bandai Hobby Store du boulevard Voltaire à Paris, ou chez des revendeurs généralistes de maquettes. Compare les gammes en stock, les précommandes et le retrait en magasin."
   - question: "Existe-t-il un magasin Gunpla à Paris ?"
-    answer: "Bandai a annoncé en 2020 l'ouverture à Paris d'un Bandai Hobby Store, présenté comme la première boutique française centrée sur le Gunpla, dans le quartier République. Son statut actuel n'est pas confirmé : vérifie ses horaires et son ouverture auprès de la boutique avant de t'y rendre."
+    answer: "Oui, le Bandai Hobby Store, au 5 boulevard Voltaire (11e arrondissement), ouvert le 30 juillet 2020 et présenté comme la première boutique française centrée sur le Gunpla. Il est toujours enregistré comme actif, mais les horaires diffusés varient selon les sources : confirme-les auprès de la boutique avant de t'y rendre."
   - question: "Peut-on précommander un Gunpla ?"
     answer: "Oui chez certaines boutiques. Une précommande réserve le kit avant sa sortie officielle : les dates restent indicatives car elles dépendent des fabricants, et les commandes sont en général expédiées dans l'ordre des précommandes."
   - question: "Faut-il acheter en boutique physique ou en ligne ?"
@@ -42,7 +45,7 @@ Cette liste n'est pas exhaustive et ne constitue pas un classement : elle prése
 
 ## Les magasins physiques
 
-Bandai a annoncé en juillet 2020 l'ouverture d'un **Bandai Hobby Store** à Paris, dans le quartier République, présenté comme la première boutique française centrée sur le Gunpla. Le communiqué évoquait environ 200 m², environ 600 types de kits et un espace atelier. Les adresses et horaires varient selon les sources de l'époque, et son statut actuel n'est pas confirmé : vérifie auprès de la boutique avant de te déplacer.
+Le **Bandai Hobby Store** a ouvert ses portes le 30 juillet 2020 au 5 boulevard Voltaire, dans le 11e arrondissement de Paris, près de République. Il a été présenté comme la première boutique française centrée sur le Gunpla. Le communiqué de lancement évoquait environ 200 m² sur deux niveaux, environ 600 types de kits et un espace atelier pour s'essayer au montage. L'établissement figure toujours comme actif au registre officiel des entreprises, mais les horaires affichés varient d'une source à l'autre (du lundi au samedi de 10 h à 19 h 30, avec une ouverture le dimanche selon les listings). Appelle ou vérifie auprès de la boutique avant de te déplacer.
 
 Plusieurs boutiques en ligne ont aussi un point de vente, comme Gunpla-Shop à Cagnes-sur-Mer ou Dynamite Gunpla aux Herbiers. Confirme les horaires et le retrait en magasin avant toute visite.
 

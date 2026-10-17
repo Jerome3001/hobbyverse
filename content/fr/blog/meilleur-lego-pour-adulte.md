@@ -6,6 +6,9 @@ lastmod: 2026-10-16
 categories: ["LEGO"]
 tags: ["lego", "lego adulte", "icons", "technic", "botanicals"]
 draft: false
+image: "/images/blog/meilleur-lego-pour-adulte.webp"
+imageAlt: "Rangée de bâtiments en briques de construction avec leurs façades détaillées, exposés sur une étagère"
+imageCredit: "Photo : Alphacolor, via Unsplash (Unsplash License)"
 faq:
   - question: "Quel est le meilleur LEGO pour adulte ?"
     answer: "Il n'y en a pas un seul : le meilleur set est celui qui correspond à ton thème préféré, à ton niveau et à la place dont tu disposes. Pars de tes centres d'intérêt (décoration, mécanique, univers de films, architecture) puis choisis le nombre de pièces selon le temps que tu veux y consacrer."

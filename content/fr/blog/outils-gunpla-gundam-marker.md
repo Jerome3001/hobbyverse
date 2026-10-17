@@ -6,6 +6,9 @@ lastmod: 2026-10-16
 categories: ["Gunpla"]
 tags: ["gunpla", "outils", "gundam marker", "pince coupante", "panel lining"]
 draft: false
+image: "/images/blog/outils-gunpla-gundam-marker.webp"
+imageAlt: "Établi de montage Gunpla avec Gundam Markers, pince coupante, cutter, pincettes, limes et un robot assemblé"
+imageCredit: "Illustration générée par IA"
 faq:
   - question: "Quels outils faut-il pour monter un Gunpla ?"
     answer: "Un kit Entry Grade se monte sans outils. Pour un High Grade, une pince coupante suffit pour commencer, puis un cutter de modélisme et des pincettes améliorent le résultat. Les marqueurs de panel lining et le vernis relèvent de l'étape suivante."

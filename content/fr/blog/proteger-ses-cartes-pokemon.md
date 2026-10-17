@@ -6,6 +6,9 @@ lastmod: 2026-10-16
 categories: ["TCG"]
 tags: ["pokémon", "sleeves", "toploader", "classeur", "conservation"]
 draft: false
+image: "/images/blog/proteger-ses-cartes-pokemon.webp"
+imageAlt: "Cartes sous protections rigides empilées à côté d'un classeur zippé ouvert, sur un bureau en bois"
+imageCredit: "Illustration générée par IA, sans marque"
 faq:
   - question: "Faut-il mettre une sleeve avant un toploader ?"
     answer: "Oui : sleeve d'abord, toploader ensuite. Une carte glissée nue dans un toploader peut rayer sa surface brillante, et la poussière peut s'infiltrer dans l'espace laissé entre la carte et le rigide."

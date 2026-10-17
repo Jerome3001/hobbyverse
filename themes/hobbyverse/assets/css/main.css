@@ -218,7 +218,7 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .feature { display: flex; flex-direction: column; background: var(--white); border: 2px solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; transition: transform var(--ease), box-shadow var(--ease); }
 .feature:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-lg); }
 .feature-cover { display: block; border-bottom: 2px solid var(--ink); }
-.feature-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+.feature-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; height: auto; }
 .feature-body { display: flex; flex-direction: column; flex: 1; padding: 1.6rem; }
 .feature-body .link-arrow { margin-top: auto; align-self: flex-start; }
 .feature-body h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); margin-bottom: .7rem; }
@@ -230,7 +230,7 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .row-cover { display: block; border-radius: 10px; overflow: hidden; border: 2px solid var(--ink); }
 .row-cover .cover { aspect-ratio: 4 / 3; }
 .row-cover .cover-glyph { font-size: 1.3rem; left: .6rem; bottom: .4rem; }
-.row-cover img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.row-cover img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; height: auto; }
 .row h3 { font-size: 1.12rem; line-height: 1.2; letter-spacing: -0.01em; }
 .row .meta { margin-bottom: .4rem; font-size: .78rem; }
 
@@ -245,6 +245,10 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .start li { counter-increment: step; position: relative; padding-left: 2.6rem; color: var(--ink-soft); font-size: .98rem; }
 .start li::before { content: counter(step); position: absolute; left: 0; top: -.05rem; width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 2px solid var(--ink); background: var(--bg-alt); font-family: var(--font-mono); font-size: .85rem; display: grid; place-items: center; color: var(--ink); }
 .start li strong { color: var(--ink); }
+.start { display: flex; flex-direction: column; }
+.start ol { flex: 1; }
+.start-link { display: inline-block; margin-top: 1.4rem; font-family: var(--font-mono); font-size: .85rem; font-weight: 500; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+.start-link:hover { text-decoration-thickness: 3px; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: #D5D7E3; padding: 4.5rem 0 0; margin-top: auto; border-radius: 40px 40px 0 0; overflow: hidden; position: relative; isolation: isolate; }
@@ -275,6 +279,8 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 /* ---------- Pages internes (provisoire, validé après la homepage) ---------- */
 .page-head { padding: 3.5rem 0 2rem; }
 .page-head-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+/* Pages avec pastilles de filtre (blog et univers) : même hauteur d'en-tête pour que les pastilles ne bougent pas d'une page à l'autre. 15rem = hauteur max de l'illustration Zaku. */
+@media (min-width: 900px) { .page-head-filtered .page-head-inner { min-height: 15rem; align-items: flex-start; } .page-head-filtered .page-art { align-self: center; } }
 .page-art { flex: 0 0 auto; width: clamp(140px, 22vw, 240px); }
 .page-head h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: .8rem; }
 .page-head p { color: var(--muted); max-width: 40rem; font-size: 1.1rem; }
@@ -282,7 +288,7 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .card { background: var(--white); border: 2px solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: transform var(--ease), box-shadow var(--ease); }
 .card:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-lg); }
 .card-cover { border-bottom: 2px solid var(--ink); }
-.card-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+.card-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; height: auto; }
 .card-body { padding: 1.3rem; }
 .card-body h3 { font-size: 1.25rem; margin-bottom: .5rem; }
 .card-body p:not(.meta) { color: var(--muted); font-size: .95rem; }
@@ -309,6 +315,13 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .filter-lego:hover { background: var(--lego); }
 .filter-tcg:hover { background: var(--tcg); }
 .filter-chip.is-active { background: var(--ink); color: var(--white); }
+@media (max-width: 600px) {
+    /* Mobile : les pastilles restent sur une seule ligne, avec défilement horizontal si l'écran est vraiment étroit. */
+    .filter { flex-wrap: nowrap; gap: .4rem; overflow-x: auto; scrollbar-width: none; margin-inline: -1rem; padding-inline: 1rem; }
+    .filter::-webkit-scrollbar { display: none; }
+    .filter-chip { flex: 0 0 auto; gap: .35rem; font-size: .85rem; padding: .4rem .7rem; }
+    .filter-chip span { font-size: .7rem; }
+}
 .empty { padding: 3rem 0 6rem; color: var(--muted); }
 .list-grid-flush { padding-bottom: 0; }
 
@@ -339,7 +352,7 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 .byline { margin-top: 1.2rem; font-size: .9rem; color: var(--muted); }
 .byline span { margin-left: .8rem; }
 .post-cover { border: 2px solid var(--ink); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); background: var(--white); }
-.post-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+.post-cover img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; height: auto; }
 .post-cover figcaption { font-size: .78rem; font-style: italic; color: var(--muted); padding: .5rem .9rem; border-top: 2px solid var(--ink); }
 
 .post-layout { max-width: 760px; margin-inline: auto; }

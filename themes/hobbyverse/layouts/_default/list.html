@@ -1,12 +1,12 @@
 {{ define "main" }}
-<section class="page-head">
+<section class="page-head{{ if or (eq .Kind "section") (and (eq .Kind "term") (eq .Data.Plural "categories")) }} page-head-filtered{{ end }}">
     <div class="wrap page-head-inner">
         <div>
-            {{ if eq .Kind "term" }}<p class="eyebrow">{{ if eq .Data.Plural "tags" }}Mot-clé{{ else }}Univers{{ end }}</p>{{ end }}
+            {{ if eq .Kind "term" }}<p class="eyebrow">{{ if eq .Data.Plural "tags" }}Mot-clé{{ else }}Univers{{ end }}</p>{{ else if eq .Kind "section" }}<p class="eyebrow">Guides</p>{{ end }}
             <h1>{{ .Title }}</h1>
             {{ with .Params.tagline }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
         </div>
-        {{ if eq .Params.art "zaku" }}{{ partial "art-zaku.html" . }}{{ end }}
+        {{ with .Params.art }}{{ partial (printf "art-%s.html" .) $ }}{{ end }}
     </div>
 </section>
 
