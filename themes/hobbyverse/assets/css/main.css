@@ -279,9 +279,10 @@ a.tile:hover .tile-foot b { transform: translateX(5px); }
 /* ---------- Pages internes (provisoire, validé après la homepage) ---------- */
 .page-head { padding: 3.5rem 0 2rem; }
 .page-head-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-/* Pages avec pastilles de filtre (blog et univers) : même hauteur d'en-tête pour que les pastilles ne bougent pas d'une page à l'autre. 15rem = hauteur max de l'illustration Zaku. */
-@media (min-width: 900px) { .page-head-filtered .page-head-inner { min-height: 15rem; align-items: flex-start; } .page-head-filtered .page-art { align-self: center; } }
-.page-art { flex: 0 0 auto; width: clamp(140px, 22vw, 240px); }
+/* Pages avec pastilles de filtre (blog et univers) : même hauteur d'en-tête pour que les pastilles ne bougent pas d'une page à l'autre. La hauteur réservée est celle de l'illustration (--art, carrée), donc la page du blog et les trois univers restent alignés quelle que soit la taille d'écran. */
+.page-head-filtered { --art: clamp(96px, 13vw, 150px); }
+@media (min-width: 900px) { .page-head-filtered .page-head-inner { min-height: var(--art); align-items: flex-start; } .page-head-filtered .page-art { align-self: center; } .page-head-filtered .page-head-inner p:not(.eyebrow) { min-height: calc(2 * 1.1rem * 1.65); min-height: 2lh; } }
+.page-art { flex: 0 0 auto; width: var(--art, clamp(140px, 22vw, 240px)); }
 .page-head h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: .8rem; }
 .page-head p { color: var(--muted); max-width: 40rem; font-size: 1.1rem; }
 .list-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-bottom: 5rem; }
