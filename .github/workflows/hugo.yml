@@ -46,13 +46,15 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify --baseURL "https://hobbyverse.fr/"
 
       - name: Contrôler la sortie
         run: |
           test -f public/index.html
           test -f public/sitemap.xml
           test -f public/robots.txt
+          grep -q "https://hobbyverse.fr/" public/sitemap.xml || { echo "Le sitemap n'utilise pas le domaine hobbyverse.fr"; exit 1; }
+          ! grep -rl "github.io" public || { echo "Une adresse github.io est restée dans le site"; exit 1; }
           ! grep -rl "localhost" public || { echo "Une adresse localhost est restée dans le site"; exit 1; }
 
       - name: Envoyer l'artefact
