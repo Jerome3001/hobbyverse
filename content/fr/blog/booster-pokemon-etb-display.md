@@ -1,8 +1,8 @@
 ---
 title: "Booster Pokémon : ETB, display, tripack expliqués"
 description: "Booster Pokémon, tripack, ETB ou display : contenu de chaque produit, raretés, ouverture et conseils pour acheter sans te faire piéger."
-date: 2026-10-16
-lastmod: 2026-10-16
+date: 2026-10-17
+lastmod: 2026-10-17
 categories: ["TCG"]
 tags: ["pokémon", "booster", "etb", "display", "tripack"]
 draft: false

@@ -1,8 +1,8 @@
 ---
 title: "Gundam Marker et outils Gunpla : le kit de départ"
 description: "Gundam Marker, pince coupante, cutter, pincettes : les outils Gunpla utiles pour un premier montage propre, et dans quel ordre les acheter."
-date: 2026-10-16
-lastmod: 2026-10-16
+date: 2026-10-17
+lastmod: 2026-10-17
 categories: ["Gunpla"]
 tags: ["gunpla", "outils", "gundam marker", "pince coupante", "panel lining"]
 draft: false

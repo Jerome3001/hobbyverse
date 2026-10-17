@@ -1,8 +1,8 @@
 ---
 title: "Vitrine LEGO : quelle taille choisir ?"
 description: "Vitrine LEGO : comment mesurer ton set, prévoir la marge, protéger de la poussière et de la lumière, et choisir entre vitrine fermée et étagère."
-date: 2026-10-16
-lastmod: 2026-10-16
+date: 2026-10-17
+lastmod: 2026-10-17
 categories: ["LEGO"]
 tags: ["lego", "vitrine", "étagère", "exposition", "poussière"]
 draft: false
