@@ -6,6 +6,9 @@ lastmod: 2026-10-20
 categories: ["LEGO"]
 tags: ["lego", "fleurs", "botanicals", "décoration"]
 draft: false
+image: "/images/blog/lego-fleurs-botanicals.webp"
+imageAlt: "Gros plan sur un bouquet de fleurs en briques de construction : roses rouges, fleurs roses, fleur violette et marguerites"
+imageCredit: "Photo : Franck Ridel, via Unsplash (Unsplash License)"
 faq:
   - question: "Qu'est-ce que la gamme LEGO Botanicals ?"
     answer: "C'est la Collection Botanique de LEGO, qui permet de créer ses propres compositions florales avec des fleurs et des plantes aux tiges, feuilles et pétales ajustables. LEGO la présente comme une gamme pour la décoration intérieure, conçue pour durer."
