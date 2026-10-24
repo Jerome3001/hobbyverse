@@ -7,7 +7,7 @@ noindex: true
 sitemap:
   disable: true
 date: 2026-10-16
-lastmod: 2026-10-16
+lastmod: 2026-10-20
 ---
 ## Éditeur du site
 
@@ -36,7 +36,7 @@ L'ensemble des contenus publiés sur Hobbyverse (textes, images, éléments grap
 
 ## Marques et droit de citation
 
-Les marques, dénominations commerciales, logos et noms de produits cités restent la propriété de leurs détenteurs respectifs. C'est notamment le cas de Gundam et de Gunpla (Sunrise et Bandai), de LEGO (Groupe LEGO), de Pokémon (Nintendo, Creatures, Game Freak et The Pokémon Company), de Magic: The Gathering (Wizards of the Coast) et de Disney Lorcana (Disney et Ravensburger).
+Les marques, dénominations commerciales, logos et noms de produits cités restent la propriété de leurs détenteurs respectifs. C'est notamment le cas de Gundam et de Gunpla (Sunrise et Bandai), de LEGO (Groupe LEGO), de Pokémon (Nintendo, Creatures, Game Freak et The Pokémon Company), de Magic: The Gathering (Wizards of the Coast), de Disney Lorcana (Disney et Ravensburger), et de Riftbound et League of Legends (Riot Games).
 
 Leur mention dans les contenus relève du droit de citation, à des fins d'information éditoriale. Hobbyverse est un site indépendant : il n'est affilié à aucune de ces sociétés, n'est ni parrainé ni approuvé par elles, et leur mention n'implique aucun lien de partenariat.
 
