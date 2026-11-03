@@ -8,7 +8,7 @@ tags: ["tcg", "riftbound", "règles", "league of legends"]
 draft: false
 image: "/images/blog/regle-riftbound.webp"
 imageAlt: "Logo de Riftbound, le jeu de cartes à collectionner de League of Legends, sur fond violet sombre"
-imageCredit: "Logo Riftbound : Riot Games. Hobbyverse n'est ni soutenu ni sponsorisé par Riot Games."
+imageCredit: "Logo : Riot Games. Site non affilié à Riot Games."
 faq:
   - question: "Comment gagne-t-on une partie de Riftbound ?"
     answer: "En atteignant 8 points et en ayant plus de points que tout adversaire (11 points en 2 contre 2). On marque en conquérant un champ de bataille ou en l'occupant au début de son tour, à raison d'un point par champ de bataille et par tour. Il n'y a pas de points de vie à faire tomber."
