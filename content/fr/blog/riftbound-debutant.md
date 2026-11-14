@@ -7,8 +7,8 @@ categories: ["TCG"]
 tags: ["tcg", "riftbound", "débutant", "league of legends"]
 draft: false
 image: "/images/blog/riftbound-debutant.webp"
-imageAlt: "Mains de plusieurs joueurs autour d'une table pendant une partie de cartes"
-imageCredit: "Photo : Bea Vallejo, via Unsplash (Unsplash License)"
+imageAlt: "Partie de Riftbound vue du dessus : cartes de légende, de runes et d'unités posées sur une table, avec la main d'un joueur"
+imageCredit: "Photo : deteksi padi, CC BY 4.0 (Roboflow)"
 faq:
   - question: "Que faut-il acheter pour commencer Riftbound ?"
     answer: "Un produit prêt à jouer : le coffret Premiers pas (2 à 4 joueurs, 4 decks préconstruits) ou un deck de champion (un deck complet de 56 cartes pour un joueur). Les boosters viennent ensuite, quand tu veux personnaliser ton deck."
