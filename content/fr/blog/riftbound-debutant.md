@@ -90,7 +90,7 @@ Pour un premier achat, le plus simple est de partir d'un produit **en français*
 
 ## Protéger ses cartes
 
-Dès que tu commences à acheter des boosters, pense à tes cartes. Les conseils de notre guide pour [protéger ses cartes Pokémon]({{< relref "blog/proteger-ses-cartes-pokemon" >}}) valent aussi ici : pochettes, classeur et boîtes de rangement s'appliquent à n'importe quel jeu de cartes. Les decks de champion incluent déjà une boîte de rangement.
+Dès que tu commences à acheter des boosters, pense à tes cartes. Les conseils de notre guide pour [protéger ses cartes]({{< relref "blog/proteger-ses-cartes-pokemon" >}}) valent aussi ici : pochettes, classeur et boîtes de rangement s'appliquent à n'importe quel jeu de cartes. Les decks de champion incluent déjà une boîte de rangement.
 
 ## Pour aller plus loin
 
