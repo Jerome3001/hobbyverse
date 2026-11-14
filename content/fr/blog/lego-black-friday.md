@@ -2,7 +2,7 @@
 title: "LEGO Black Friday 2026 : dates, offres et conseils"
 description: "LEGO Black Friday 2026 : dates officielles, week-end Insiders, ce que LEGO a confirmé ou non, et comment repérer une vraie bonne affaire."
 date: 2026-10-16
-lastmod: 2026-10-16
+lastmod: 2026-11-14
 categories: ["LEGO"]
 tags: ["lego", "black friday", "insiders", "promotions"]
 draft: false
@@ -11,7 +11,7 @@ imageAlt: "Tas de briques de construction colorées, bleues, vertes et rouges"
 imageCredit: "Photo : Declan Sun, via Unsplash (Unsplash License)"
 faq:
   - question: "Quand a lieu le LEGO Black Friday 2026 ?"
-    answer: "Le Black Friday est le vendredi 27 novembre 2026 et l'opération de la boutique LEGO se termine avec le Cyber Monday, le lundi 30 novembre. Le week-end LEGO Insiders, réservé aux membres, a lieu juste avant, les 21 et 22 novembre. Ces dates viennent des pages officielles de LEGO consultées le 16 octobre 2026."
+    answer: "Le Black Friday est le vendredi 27 novembre 2026 et l'opération de la boutique LEGO se termine avec le Cyber Monday, le lundi 30 novembre. Le week-end LEGO Insiders, réservé aux membres, a lieu juste avant, les 21 et 22 novembre. Ces dates viennent des pages officielles de LEGO consultées le 14 novembre 2026."
   - question: "LEGO double-t-il les points Insiders pendant le Black Friday ?"
     answer: "En 2025, les points étaient doublés pendant le week-end Insiders. En 2026, la boutique LEGO affiche déjà la mention « Points doublés » sur plusieurs produits, mais la page du week-end ne relie pas clairement cette mention à l'opération. Attends l'annonce détaillée de LEGO avant de compter dessus."
   - question: "Faut-il être membre LEGO Insiders pour profiter des offres ?"
@@ -30,7 +30,7 @@ Le **LEGO Black Friday 2026** démarre le vendredi 27 novembre sur la boutique o
 >
 > - Week-end LEGO Insiders : samedi 21 et dimanche 22 novembre 2026.
 > - Black Friday : vendredi 27 novembre, jusqu'au Cyber Monday du 30 novembre.
-> - Sets remisés et cadeaux : pas encore annoncés par LEGO au 16 octobre 2026.
+> - Sets remisés et cadeaux : pas encore annoncés par LEGO au 14 novembre 2026.
 > - Les autres marchands fixent leurs propres dates et leurs propres prix.
 
 ## LEGO Black Friday 2026 : les dates
@@ -43,7 +43,7 @@ Le Black Friday tombe chaque année le vendredi qui suit Thanksgiving aux États
 | Black Friday | Vendredi 27 novembre | Boutique officielle LEGO |
 | Cyber Monday | Lundi 30 novembre | Dernier jour de l'opération |
 
-Ces dates viennent de la page [Black Friday de la boutique LEGO](https://www.lego.com/fr-fr/black-friday-deals) et de la page du [week-end Insiders](https://www.lego.com/fr-fr/insiders-weekend-deals), consultées le 16 octobre 2026. Elles peuvent évoluer, alors revérifie-les avant de planifier tes achats.
+Ces dates viennent de la page [Black Friday de la boutique LEGO](https://www.lego.com/fr-fr/black-friday-deals) et de la page du [week-end Insiders](https://www.lego.com/fr-fr/insiders-weekend-deals), consultées le 14 novembre 2026. Elles peuvent évoluer, alors revérifie-les avant de planifier tes achats.
 
 ## Ce que LEGO a confirmé, et ce qui ne l'est pas encore
 
@@ -110,4 +110,4 @@ Le plus utile se fait avant le début des offres :
 
 Retrouve aussi tous nos [guides LEGO]({{< relref "categories/lego/_index.md" >}}) dans la rubrique dédiée.
 
-Informations vérifiées le 16 octobre 2026. L'article sera mis à jour quand LEGO annoncera les offres.
+Informations vérifiées le 14 novembre 2026. L'article sera mis à jour quand LEGO annoncera les offres.
