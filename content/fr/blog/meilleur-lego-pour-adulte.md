@@ -2,7 +2,7 @@
 title: "Meilleur LEGO pour adulte : bien choisir son set"
 description: "Meilleur LEGO pour adulte : label 18+, gammes, difficulté et exposition. Les critères pour choisir un set adapté à tes goûts et à ta place."
 date: 2026-10-16
-lastmod: 2026-10-16
+lastmod: 2026-11-17
 categories: ["LEGO"]
 tags: ["lego", "lego adulte", "icons", "technic", "botanicals"]
 draft: false
@@ -71,7 +71,7 @@ Ce sont les gammes que l'on retrouve le plus souvent au rayon 18+. L'offre évol
 
 ## LEGO adulte femme : y a-t-il des gammes dédiées ?
 
-C'est une recherche très fréquente, mais LEGO ne classe pas les sets 18+ par genre. Le plus simple est de partir de tes centres d'intérêt : fleurs avec les Botanicals, décoration murale avec Art, monuments, voitures ou univers de films. Tous les thèmes sont ouverts à tout le monde.
+C'est une recherche très fréquente, mais LEGO ne classe pas les sets 18+ par genre. Le plus simple est de partir de tes centres d'intérêt : fleurs avec les Botanicals, décoration murale avec Art, monuments, voitures ou univers de films. Tous les thèmes sont ouverts à tout le monde{{< lien-si-publie slug="lego-adulte-femme" avant=". Nos idées de sets classées par goûts et par budget sont réunies dans notre sélection " ancre="LEGO adulte femme" apres="" >}}.
 
 ## Les LEGO les plus difficiles
 
