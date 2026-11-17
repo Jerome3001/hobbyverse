@@ -53,12 +53,6 @@
                 </section>
                 {{ end }}
 
-                {{ with .Params.tags }}
-                <ul class="post-tags" aria-label="Mots-clés">
-                    {{ range . }}<li><a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="filter-chip">#{{ . }}</a></li>{{ end }}
-                </ul>
-                {{ end }}
-
                 <aside class="author-box" aria-label="À propos de l'auteur">
                     {{ partial "logo-mark.html" . }}
                     <div>

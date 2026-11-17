@@ -31,7 +31,6 @@ enableRobotsTXT = true
 
 [taxonomies]
   category = "categories"
-  tag = "tags"
 
 [[languages.fr.menus.main]]
   name = "Gunpla"

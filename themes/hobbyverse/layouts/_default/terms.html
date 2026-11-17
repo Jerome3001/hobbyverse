@@ -6,7 +6,6 @@
     </div>
 </section>
 <div class="wrap terms">
-    {{ if eq .Data.Plural "categories" }}
     <div class="terms-grid">
         {{ range .Data.Terms.Alphabetical }}
         <a href="{{ .Page.RelPermalink }}" class="term-card term-{{ .Page.Title | urlize }}">
@@ -16,12 +15,5 @@
         </a>
         {{ end }}
     </div>
-    {{ else }}
-    <ul class="tag-cloud">
-        {{ range .Data.Terms.Alphabetical }}
-        <li><a href="{{ .Page.RelPermalink }}" class="filter-chip">#{{ .Page.Title }} <span>{{ .Count }}</span></a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
 </div>
 {{ end }}
