@@ -2,7 +2,7 @@
 title: "Quel TCG choisir : Pokémon, Magic, Lorcana ou Riftbound ?"
 description: "Quel TCG choisir pour débuter ? Pokémon, Magic, Lorcana, Riftbound, Yu-Gi-Oh! et One Piece comparés : difficulté, durée de partie, âge et produit de départ."
 date: 2026-10-24
-lastmod: 2026-10-24
+lastmod: 2026-11-24
 categories: ["TCG"]
 tags: ["tcg", "pokémon", "magic", "lorcana", "riftbound", "yu-gi-oh", "one piece"]
 draft: false
@@ -96,6 +96,7 @@ Les extensions, les formats et les règles évoluent : vérifie les informations
 4. Protège tes cartes dès le départ : notre guide pour [protéger ses cartes Pokémon]({{< relref "blog/proteger-ses-cartes-pokemon" >}}) s'applique à la plupart des jeux.
 5. Si tu optes pour Pokémon, notre article sur les [boosters, ETB et displays]({{< relref "blog/booster-pokemon-etb-display" >}}) explique les produits, et celui sur la [valeur d'une carte Pokémon]({{< relref "blog/valeur-carte-pokemon" >}}) la façon de l'estimer.
 6. Si tu optes pour Riftbound, {{< lien-si-publie slug="riftbound-debutant" avant="notre guide " ancre="Riftbound pour débuter" apres=" détaille quoi acheter en premier, et " >}}{{< lien-si-publie slug="regle-riftbound" avant="nos " ancre="règles de Riftbound" apres=" suivent l'ordre d'une partie. " >}}demande une démonstration dans une boutique de jeux près de chez toi.
+7. Si tu optes pour Lorcana, {{< lien-si-publie slug="lorcana-debutant" avant="notre guide " ancre="Lorcana pour débuter" apres=" compare le coffret Prélude, le coffret 2 joueurs et les decks de démarrage, avec les règles de base." >}}
 
 Retrouve tous nos [guides TCG]({{< relref "categories/tcg/_index.md" >}}) dans la rubrique dédiée, ou parcours l'ensemble des [articles du blog]({{< relref "blog/_index.md" >}}).
 
